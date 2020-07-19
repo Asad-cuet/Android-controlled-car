@@ -2,6 +2,8 @@
 Servo survo;
 int i,x;
 
+
+
 int trig = 11;    // sonar sensor
 int echo = 12;
 float distance,duration;
@@ -65,9 +67,10 @@ void loop() {
         survo.write(-90); //turn right 
         delay(200);
         survo.write(0);
+        digitalWrite(blu_power,HIGH); 
         RobotBackward();  // getting out from this condition
         delay(1500);
-        digitalWrite(blu_power,HIGH);     
+            
               }
                         // iF you use Andriod Phone
    

@@ -2,7 +2,7 @@
 Servo survo;
 int i,x;
 
-int trig = 11;    // solar sensor
+int trig = 11;    // sonar sensor
 int echo = 12;
 float distance,duration;
 
@@ -227,7 +227,7 @@ void RobotGo() {
   digitalWrite(MotorD_in3, LOW);     //anti clockwise
   digitalWrite(MotorD_in4, HIGH);
 }
-void Solarsensor(){
+void Solarsensor() {
         digitalWrite(trig, HIGH);
         delay(0.01);
         digitalWrite(trig, LOW);
